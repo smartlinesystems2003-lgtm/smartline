@@ -4,16 +4,18 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <meta name="description"
-        content="Smartline Systems is a leading Electronic Manufacturing Services (EMS) company in Pune providing PCB Assembly, SMT, THT, Box Build Integration and ISO certified manufacturing solutions since 2003.">
+        content="SMARTLINE Systems is a leading Electronic Manufacturing Services (EMS) company in Pune providing PCB Assembly, SMT, THT, Box Build Integration and ISO certified manufacturing solutions since 2003.">
     <meta name="keywords"
         content="EMS company Pune, PCB assembly India, SMT assembly Pune, electronic manufacturing services, ISO 9001 PCB manufacturer, box build integration India">
-    <meta name="author" content="Smartline Systems">
+    <meta name="author" content="SMARTLINE Systems">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Smartline Systems | Electronic Manufacturing Services">
+    <meta property="og:title" content="SMARTLINE Systems | Electronic Manufacturing Services">
     <meta property="og:description"
         content="Precision PCB Assembly, SMT, THT & Box Build Integration since 2003. ISO Certified EMS provider in India.">
     <meta property="og:type" content="website">
@@ -24,7 +26,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smartline Systems | Electronic Manufacturing Services</title>
+    <title>SMARTLINE Systems | Electronic Manufacturing Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -61,7 +63,7 @@
 
         /* Hero Background */
         .hero-bg {
-            background: linear-gradient(rgba(12, 4, 4, 0.40), rgba(0, 0, 0, 0.40)),
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
                 url('logo img/our.png');
             background-size: cover;
             background-position: center;
@@ -183,7 +185,7 @@
 
             <!-- Logo -->
             <a href="index.html" class="flex items-center space-x-3">
-                <img src="smartline.png" alt="Smartline Systems Logo" class="brand-logo">
+                <img src="smartline.png" alt="SMARTLINE Systems Logo" class="brand-logo">
             </a>
 
             <!-- Desktop Nav -->
@@ -282,8 +284,10 @@
                     <div
                         class="absolute left-0 top-full mt-3 w-56 bg-white shadow-2xl rounded-lg border-t-4 border-red-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[9999] py-2">
                         <a href="contact.html"
+                            class="block px-4 py-3 hover:bg-red-50 hover:text-red-700 transition">Enquiry</a>
+                        <a href="contact.html"
                             class="block px-4 py-3 hover:bg-red-50 hover:text-red-700 transition">Contact Us</a>
-                        <a href="logo img/supplier.html"
+                        <a href="supplier.html"
                             class="block px-4 py-3 hover:bg-red-50 hover:text-red-700 transition">Supplier
                             Registration</a>
                         <a href="career.html"
@@ -320,18 +324,49 @@
     <main>
 
         <!-- Hero -->
-        <section class="hero-bg h-[600px] flex items-center justify-center text-center text-white px-6">
-            <div class="max-w-4xl">
-                <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight uppercase tracking-tighter">
-                    Precision Electronics <span class="text-red-500">Manufacturing Partner</span>
-                </h1>
-                <p class="text-lg md:text-xl text-gray-200 mb-8 font-medium">Precision electronic manufacturing services
-                    since 2003.</p>
-                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="contact.html"
-                        class="bg-red-700 px-10 py-3 font-bold rounded shadow-lg hover:bg-red-800 transition-all uppercase tracking-widest">
-                        ENQUIRY
-                    </a>
+        <!-- Hero -->
+        <section class="hero-bg h-[450px] flex items-center justify-start text-white px-6">
+            <div class="container mx-auto px-4 md:px-8">
+                <div class="max-w-3xl">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="bg-red-700/20 p-1.5 rounded-full backdrop-blur-sm border border-red-500/30">
+                            <svg class="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </span>
+                        <span class="text-[20px] md:text-xs font-bold uppercase tracking-[0.3em] text-white/90">WELCOME
+                            TO</span>
+                    </div>
+
+                    <h1
+                        class="text-lg md:text-2xl lg:text-3xl font-black mb-2 leading-tight uppercase tracking-tighter">
+                        SMARTLINE SYSTEMS <span class="text-red-500">PVT. LTD.</span>
+                    </h1>
+
+                    <div class="w-16 h-1 bg-red-600 mb-5 rounded-full"></div>
+
+                    <p class="text-sm md:text-base text-gray-200 mb-8 font-medium max-w-xl leading-relaxed">
+                        Leading Electronic Manufacturing Services (EMS) provider in India. Specialized in PCB Assembly,
+                        SMT, THT, and Box Build Integration since 2003. ISO-certified excellence for automotive,
+                        medical, and industrial sectors.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-4">
+                        <a href="about.html"
+                            class="group bg-red-700 px-6 py-2.5 font-bold rounded shadow-xl hover:bg-red-800 transition-all uppercase tracking-widest flex items-center w-full sm:w-auto justify-center text-[10px] md:text-xs">
+                            EXPLORE MORE
+                            <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                        <a href="contact.html"
+                            class="bg-white text-gray-900 border border-white px-6 py-2.5 font-bold rounded shadow-lg hover:bg-transparent hover:text-white transition-all uppercase tracking-widest w-full sm:w-auto justify-center flex text-[10px] md:text-xs">
+                            CONTACT US
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -441,9 +476,9 @@
                 <h2 class="text-blue-900 font-bold uppercase tracking-widest text-sm mb-2">Company Profile</h2>
                 <h3
                     class="text-3xl md:text-4xl font-black text-gray-900 mb-8 border-b-4 border-red-700 inline-block pb-2">
-                    About Smartline Systems</h3>
+                    About <span class="text-red-700">SMARTLINE Systems</span></h3>
                 <p class="max-w-3xl mx-auto text-gray-600 text-lg leading-relaxed mb-10">
-                    Established in 2003, SMARTLINE Systems is a trusted provider of Electronic Manufacturing Services
+                    Established in 2003, <span class="text-red-700 font-bold">SMARTLINE Systems</span> is a trusted provider of Electronic Manufacturing Services
                     (EMS), delivering high-quality, cost-effective solutions to customers across India. Over the past
                     two decades, we have built strong expertise serving diverse industries including Instrumentation,
                     Level Control, Telecommunications, Machine Manufacturing, Industrial Automation, High-End Consumer
@@ -517,7 +552,7 @@
                     <!-- Machine 4 -->
                     <div
                         class="bg-white rounded-xl shadow-md p-6 flex flex-col sm:flex-row items-center gap-6 hover:shadow-lg transition border border-gray-100">
-                        <img src="https://media.rs-online.com/Y2517686-01.jpg" alt="ESD Workstation"
+                        <img src="logo img/esd.jpg" alt="ESD Workstation"
                             class="w-full sm:w-40 h-40 object-cover rounded-lg shadow-sm">
                         <div class="text-center sm:text-left">
                             <h4 class="text-xl font-bold text-blue-900 mb-2">ESD-Safe Workstations</h4>
@@ -875,11 +910,11 @@
                             <iframe
                                 src="https://www.google.com/maps?q=SMARTLINE+Systems+Plot+No.+RM-99+B-3+Shahunagar+MIDC+Chinchwad+Pune+411019&output=embed"
                                 width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy"
-                                title="Smartline Systems Location">
+                                title="SMARTLINE Systems Location">
                             </iframe>
                         </div>
                         <p class="mt-4 text-gray-600 text-sm leading-relaxed">
-                            SMARTLINE Systems | Electronic Manufacturing Services<br>
+                            <span class="text-red-700 font-bold">SMARTLINE Systems</span> | Electronic Manufacturing Services<br>
                             Plot No. RM-99 B-3 Shahunagar, MIDC,<br>
                             Chinchwad, Pune – 411019, Maharashtra, India
                         </p>
@@ -924,7 +959,7 @@
                                     class="w-full bg-red-700 text-white py-2 text-sm rounded-md font-semibold uppercase tracking-wider hover:bg-red-800 transition">
                                     Submit
                                 </button>
-                                
+
                                 <p id="form-message" class="text-sm text-center hidden font-semibold mt-2"></p>
                             </form>
                         </div>
@@ -947,7 +982,7 @@
                 <div>
                     <img src="smartline.png" alt="Smartline Logo" class="h-12 mb-6">
                     <p class="text-sm leading-relaxed text-gray-400">
-                        Smartline Systems is a trusted Electronic Manufacturing Services (EMS) provider delivering
+                        <span class="text-red-700 font-bold">SMARTLINE Systems</span> is a trusted Electronic Manufacturing Services (EMS) provider delivering
                         precision PCB assembly, manufacturing and integrated solutions since 2003.
                     </p>
                     <div class="flex space-x-4 mt-6">
@@ -998,8 +1033,8 @@
 
             </div>
 
-            <div class="border-t border-gray-800 mt-14 pt-6 text-center text-xs text-gray-500 tracking-widest">
-                &copy; 2026 SMARTLINE SYSTEMS. ALL RIGHTS RESERVED.
+            <div class="border-t border-gray-800 mt-14 pt-6 text-center text-xs text-gray-500 tracking-widest uppercase">
+                &copy; 2026 <span class="text-red-700 font-bold">SMARTLINE Systems</span>. All Rights Reserved.
             </div>
 
         </div>
@@ -1069,29 +1104,29 @@
                     submitButton.innerText = 'Submitting...';
                     formMessage.classList.add('hidden');
 
-                    fetch(scriptURL, { 
-                        method: 'POST', 
-                        body: new FormData(form) 
+                    fetch(scriptURL, {
+                        method: 'POST',
+                        body: new FormData(form)
                     })
-                    .then(response => {
-                        // Success state
-                        formMessage.innerText = "Thank you! Your enquiry has been sent successfully.";
-                        formMessage.classList.remove('hidden', 'text-red-600');
-                        formMessage.classList.add('text-green-600');
-                        form.reset();
-                    })
-                    .catch(error => {
-                        // Error state
-                        console.error('Error!', error.message);
-                        formMessage.innerText = "Oops! Something went wrong. Please try again later.";
-                        formMessage.classList.remove('hidden', 'text-green-600');
-                        formMessage.classList.add('text-red-600');
-                    })
-                    .finally(() => {
-                        // Reset button state
-                        submitButton.disabled = false;
-                        submitButton.innerText = 'Submit';
-                    });
+                        .then(response => {
+                            // Success state
+                            formMessage.innerText = "Thank you! Your enquiry has been sent successfully.";
+                            formMessage.classList.remove('hidden', 'text-red-600');
+                            formMessage.classList.add('text-green-600');
+                            form.reset();
+                        })
+                        .catch(error => {
+                            // Error state
+                            console.error('Error!', error.message);
+                            formMessage.innerText = "Oops! Something went wrong. Please try again later.";
+                            formMessage.classList.remove('hidden', 'text-green-600');
+                            formMessage.classList.add('text-red-600');
+                        })
+                        .finally(() => {
+                            // Reset button state
+                            submitButton.disabled = false;
+                            submitButton.innerText = 'Submit';
+                        });
                 });
             }
 
