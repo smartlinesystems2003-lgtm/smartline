@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Smartline Systems Supplier Registration Form - Apply to become a supplier or vendor">
+  <meta name="description" content="SMARTLINE Systems Supplier Registration Form - Apply to become a supplier or vendor">
   <meta name="keywords" content="supplier registration, vendor application, material supplier">
-  <meta name="author" content="Smartline Systems">
+  <meta name="author" content="SMARTLINE Systems">
   <meta name="robots" content="index, follow">
 
-  <title>Supplier Registration Form | Smartline Systems</title>
+  <title>Supplier Registration Form | SMARTLINE Systems</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -264,32 +264,33 @@
   <!-- ===== HEADER ===== -->
   <header class="bg-white sticky top-0 z-[9999] border-b border-gray-200 backdrop-blur-sm">
     <div class="container mx-auto px-2 py-1 flex justify-between items-center">
+
+      <!-- Logo -->
       <a href="index.html" class="flex items-center space-x-3">
-        <img src="./smartline.png" alt="Smartline Systems Logo" class="brand-logo" loading="lazy">
+        <img src="smartline.png" alt="SMARTLINE Systems Logo" class="brand-logo">
       </a>
 
+      <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center space-x-8 text-gray-700 font-bold uppercase text-sm">
         <a href="index.html" class="hover:text-red-700 transition-colors nav-link">Home</a>
         <a href="about.html" class="hover:text-red-700 transition-colors nav-link">About Us</a>
 
         <!-- Products & Services Dropdown -->
         <div class="relative group py-4">
-          <a href="services.html" class="nav-link flex items-center hover:text-red-700 transition-colors uppercase font-semibold">
+          <a href="services.html"
+             class="nav-link flex items-center hover:text-red-700 transition-colors uppercase font-semibold">
             Products &amp; Services
-            <svg class="w-4 h-4 ml-1 transition-transform duration-300 group-hover:rotate-180"
-                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            <svg class="arrow-icon w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
             </svg>
           </a>
 
           <!-- Mega Menu -->
-          <div class="megamenu absolute left-1/2 -translate-x-1/2 top-full mt-3
+          <div class="megamenu absolute left-1/2 top-full mt-3
                       w-[780px] max-w-[95vw]
-                      bg-white shadow-2xl rounded-lg
+                      bg-white shadow-2xl rounded-lg   
                       border-t-4 border-red-700
-                      opacity-0 invisible
-                      group-hover:opacity-100 group-hover:visible
-                      transition-all duration-300 z-[9999] p-6">
+                      z-[9999] p-6">
             <div class="grid grid-cols-3 gap-6 text-left">
               <!-- Column 1 -->
               <div>
@@ -326,7 +327,22 @@
           </div>
         </div>
 
-        <a href="contact.html" class="hover:text-red-700 transition-colors nav-link font-semibold uppercase">Contact</a>
+        <!-- Contact Dropdown -->
+        <div class="relative group py-4">
+          <a href="contact.html" class="nav-link flex items-center hover:text-red-700 transition-colors uppercase font-semibold">
+            Contact
+            <svg class="w-4 h-4 ml-1 transition-transform duration-300 group-hover:rotate-180"
+                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </a>
+          <div class="absolute left-0 top-full mt-3 w-56 bg-white shadow-2xl rounded-lg border-t-4 border-red-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[9999] py-2">
+            <a href="contact.html" class="block px-4 py-3 hover:bg-red-50 hover:text-red-700 transition">Enquiry</a>
+            <a href="contact.html" class="block px-4 py-3 hover:bg-red-50 hover:text-red-700 transition">Contact Us</a>
+            <a href="supplier.html" class="block px-4 py-3 hover:bg-red-50 hover:text-red-700 transition">Supplier Registration</a>
+            <a href="career.html" class="block px-4 py-3 hover:bg-red-50 hover:text-red-700 transition">Career / Jobs</a>
+          </div>
+        </div>
       </nav>
 
       <a href="contact.html" class="hidden md:inline-block bg-red-700 text-white font-bold px-6 py-2 rounded shadow-md hover:bg-red-800 transition-all uppercase text-sm">
@@ -334,13 +350,13 @@
       </a>
 
       <button id="mobile-menu-button" class="md:hidden text-gray-900">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        <svg id="menu-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
         </svg>
       </button>
     </div>
 
-    <div id="mobile-menu-dropdown" class="hidden md:hidden px-6 pb-6 bg-white border-t">
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-6 bg-white border-t">
       <a href="index.html" class="block py-3 font-bold border-b nav-link">Home</a>
       <a href="about.html" class="block py-3 font-bold border-b nav-link">About Us</a>
       <a href="services.html" class="block py-3 font-bold border-b nav-link">Services</a>
@@ -364,6 +380,12 @@
     <!-- Form Section -->
     <section class="py-12 bg-gray-50">
       <div class="container mx-auto px-4 max-w-4xl">
+
+        <!-- Success Message (hidden by default) -->
+        <div id="success-message" class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-6" role="alert">
+          <strong class="font-bold">Success!</strong>
+          <span class="block sm:inline"> Thank you for submitting your application. We will review it and contact you soon.</span>
+        </div>
 
         <form id="supplierForm" method="POST" enctype="multipart/form-data" class="space-y-6">
 
@@ -754,7 +776,7 @@
               <div class="checkbox-item bg-blue-50 p-4 rounded">
                 <input type="checkbox" id="declaration" name="declaration" required>
                 <label for="declaration" class="font-medium text-gray-800 cursor-pointer">
-                  We hereby declare that the information provided is true and correct. We agree to comply with Smartline Systems' quality and procurement policies.
+                  We hereby declare that the information provided is true and correct. We agree to comply with <span class="text-red-700 font-bold">SMARTLINE Systems</span>' quality and procurement policies.
                 </label>
               </div>
 
@@ -808,9 +830,9 @@
 
         <!-- Column 1: Logo & About -->
         <div>
-          <img src="./smartline.png" alt="Smartline Logo" class="h-12 mb-6" loading="lazy">
+          <img src="smartline.png" alt="SMARTLINE Systems Logo" class="h-12 mb-6">
           <p class="text-sm leading-relaxed text-gray-400">
-            Smartline Systems is a trusted Electronic Manufacturing Services (EMS) provider delivering precision PCB assembly, manufacturing and integrated solutions since 2003.
+            <span class="text-red-700 font-bold">SMARTLINE Systems</span> is a trusted Electronic Manufacturing Services (EMS) provider delivering precision PCB assembly, manufacturing and integrated solutions since 2003.
           </p>
           <div class="flex space-x-4 mt-6">
             <a href="#" class="social-icon">
@@ -859,7 +881,7 @@
       </div>
 
       <div class="border-t border-gray-800 mt-14 pt-6 text-center text-xs text-gray-500 tracking-widest">
-        &copy; 2026 SMARTLINE SYSTEMS. ALL RIGHTS RESERVED.
+        &copy; <span id="current-year"></span> <span class="text-red-700 font-bold">SMARTLINE Systems</span>. All Rights Reserved.
       </div>
 
     </div>
@@ -881,12 +903,20 @@
 
     // Mobile Menu Toggle
     document.addEventListener('DOMContentLoaded', function () {
-      const mobileToggle = document.getElementById('mobile-menu-button');
-      const mobileMenu = document.getElementById('mobile-menu-dropdown');
+      // Dynamic year
+      const yearEl = document.getElementById('current-year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-      if (mobileToggle && mobileMenu) {
-        mobileToggle.addEventListener('click', function () {
-          mobileMenu.classList.toggle('hidden');
+      const mobileBtn  = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon   = document.getElementById('menu-icon');
+
+      if (mobileBtn && mobileMenu && menuIcon) {
+        mobileBtn.addEventListener('click', () => {
+          const isHidden = mobileMenu.classList.toggle('hidden');
+          menuIcon.innerHTML = isHidden
+            ? '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>'
+            : '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>';
         });
       }
 
@@ -903,11 +933,29 @@
 
       // Form Submission Handler
       const supplierForm = document.getElementById('supplierForm');
+      const successMessage = document.getElementById('success-message');
+      
       if (supplierForm) {
         supplierForm.addEventListener('submit', function(e) {
           e.preventDefault();
-          alert('Thank you for submitting your application! We will review it and contact you soon.');
-          // You can replace this with actual form submission logic
+          
+          // Mimic a smooth submission
+          const submitBtn = supplierForm.querySelector('button[type="submit"]');
+          const originalText = submitBtn.innerText;
+          submitBtn.innerText = 'Submitting...';
+          submitBtn.disabled = true;
+
+          setTimeout(() => {
+            if (successMessage) {
+              successMessage.classList.remove('hidden');
+              supplierForm.reset();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+              alert('Thank you for submitting your application!');
+            }
+            submitBtn.innerText = originalText;
+            submitBtn.disabled = false;
+          }, 1500);
         });
       }
     });
